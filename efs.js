@@ -10,16 +10,16 @@ app.use(express.urlencoded({
     extended: true
 }));
 
-let serverIP = "10.197.12.9"
-let portNumber = 8443
-let msisdn = 7838398093
-let username =""
-let password = ""
-let iname =""
-let input ="BCHK_NG_Data_4504"
-let clientTransactionId = 234872789
-let user_id = "FN99999@fn.mtn.com"
-let nonGsm=true
+// let serverIP = "10.197.12.9"
+// let portNumber = 8443
+// let msisdn = 7838398093
+// let username =""
+// let password = ""
+// let iname =""
+// let input ="BCHK_NG_Data_4504"
+// let clientTransactionId = 234872789
+// let user_id = "FN99999@fn.mtn.com"
+// let nonGsm=true
 
 
 
@@ -51,9 +51,9 @@ var config = {
 
 axios(config)
 .then(function (response) {
-  console.log("*******EFS SubscriberDetails URL*********");
+  console.log("*********EFS SubscriberDetails URL*********");
   console.log(config.url);
-  console.log("*******EFS SubscriberDetails Response*********");
+  console.log("*********EFS SubscriberDetails Response*********");
   console.log(JSON.stringify(response.data));
 })
 .catch(function (error) {
